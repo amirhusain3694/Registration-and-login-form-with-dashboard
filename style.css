@@ -1,0 +1,97 @@
+/* For desktop styles */
+
+body {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    text-align: center;
+    font-size: large;
+    font-weight: 200;
+    background: transparent;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px;
+    border: none;
+}
+
+legend {
+    color: brown;
+    font-size: 50px;
+    background: rgb(159, 53, 3);
+    border: 3px dotted black;
+    border-radius: 10px;
+    color: white;
+}
+
+.form-section {
+    margin: 30px;
+    max-width: 200%;
+    width: 500px;
+    
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.check-box {
+    margin: 20px;
+    padding: 0 10px;
+}
+
+.input-box .col-1,
+input,
+.btn,
+summary {
+    padding: 5px 2px;
+}
+
+.input-box ::placeholder,
+input,
+.btn,
+select,
+.date {
+    color: rgb(159, 53, 3);
+    font-size: 1.1rem;
+    padding: 1rem 0.5rem;
+    border-radius: 5px;
+    border-color: rgb(159, 53, 3);
+    cursor: text,se-resize;
+}
+
+.input-box .btn {
+    font-size: 30px;
+    margin-top: 30px;
+    font-weight: bolder;
+    transition: ease 2s;
+}
+
+.btn:hover {
+    background-color: rgb(159, 53, 3);
+    color: #ffffff;
+}
+
+/* Media query for tablets (landscape and portrait) */
+@media only screen and (max-width: 1024px) {
+    .form-section {
+        width: 90%; /* Adjust the width for tablets */
+        margin: 20px;
+    }
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .form-section {
+        width: 80%; /* Adjust the width for mobile devices */
+        margin: 40px;
+    }
+}
